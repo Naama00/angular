@@ -1,0 +1,10 @@
+<form [formGroup]="technicianOrderForm" (ngSubmit)="isValidForm()">
+    <input type="date" formControlName="date" placeholder="date: 00/00/0000" [ngClass]="{'invalid-field': isFieldInvalid('date')}">
+    <input type="text" formControlName="name" placeholder="name" [ngClass]="{'invalid-field': isFieldInvalid('name')}">
+    <input type="text" formControlName="address" placeholder="address" [ngClass]="{'invalid-field': isFieldInvalid('address')}">
+    <input type="text" formControlName="city" placeholder="city" [ngClass]="{'invalid-field': isFieldInvalid('city')}">
+    <input type="text" formControlName="phoneNumber" placeholder="phone number" [ngClass]="{'invalid-field': isFieldInvalid('phoneNumber')}">
+    <input type="text" formControlName="coase" placeholder="coase" [ngClass]="{'invalid-field': isFieldInvalid('coase')}">
+    <input type="text" formControlName="problemDescription" placeholder="problem description" [ngClass]="{'invalid-field': isFieldInvalid('problemDescription')}">
+    <button type="submit">send</button>
+</form>

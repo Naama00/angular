@@ -1,0 +1,15 @@
+<form (ngSubmit)="onSubmit()" [attr.dir]="serviceData.language=='en'?'ltr':'rtl'">
+    <h1>request for tax discount</h1>
+    <input type="text" id="name" name="name" required placeholder="name">
+    <input type="email" id="email" name="email" required placeholder="email">
+    <input type="text" id="phone" name="phone" required placeholder="phone">
+    <input type="text" id="address" name="address" required placeholder="address">
+    <input type="number" id="numberOfChildren" name="numberOfChildren" required placeholder="number of children">
+    <select name="monthlySalary" id="monthlySalary" placeholder="monthly salary">
+        <option value="0-1000">0-1000</option>
+        <option value="1000-3000">1000-3000</option>
+        <option value="3000+">3000+</option>
+    </select>
+    <input type="text" id="notes" name="notes" placeholder="additional notes">
+    <button type="submit">Submit</button>
+</form>

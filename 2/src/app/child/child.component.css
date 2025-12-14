@@ -1,0 +1,27 @@
+.products{
+    width: 50%;
+    margin: 5%;
+    background-color: rgb(255, 248, 184);
+    align-items: center;
+    text-align: center;
+    border-radius: 30px;
+}
+button{
+    width: 100px;
+        background-color: #9b2c58; /* צבע רקע ירוק */
+    color: white; /* צבע טקסט לבן */
+    padding: 15px 32px; /* ריווח פנימי */
+    text-align: center; /* ממרכז טקסט */
+    text-decoration: none; /* הסרת קו תחתון */
+    display: inline-block; /* הצגת הכפתור כ-inline block */
+    font-size: 16px; /* גודל גופן */
+    margin: 4px 2px; /* ריווח חיצוני */
+    cursor: pointer; /* שינוי סמן לעכבר */
+    border: none; /* הסרת גבול */
+    border-radius: 14px; /* פינות מעוגלות */
+    transition: background-color 0.3s; /* מעבר חלק על צבע הרקע */
+}
+
+button:hover {
+    background-color: #be7292; /* צבע רקע חדש בעת ריחוף */
+}
