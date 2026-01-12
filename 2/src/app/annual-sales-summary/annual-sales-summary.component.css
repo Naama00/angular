@@ -1,0 +1,32 @@
+.annual-summary {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.summary-section {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+}
+
+.summary-section h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+.summary-section p, .summary-section ul {
+  margin: 10px 0;
+}
+
+.summary-section ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.summary-section li {
+  padding: 5px 0;
+}

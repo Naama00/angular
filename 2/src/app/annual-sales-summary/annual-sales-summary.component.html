@@ -1,0 +1,44 @@
+<div class="annual-summary">
+  <h1>Annual Sales Summary</h1>
+
+  <div class="summary-section">
+    <h2>Sales</h2>
+    <p>Total Sales: ${{ sales.total }}</p>
+    <p>Growth: {{ sales.growth }}%</p>
+  </div>
+
+  <div class="summary-section">
+    <h2>Customers</h2>
+    <p>Total Customers: {{ customers.total }}</p>
+    <p>New Customers: {{ customers.new }}</p>
+    <p>Retention Rate: {{ customers.retention }}%</p>
+  </div>
+
+  <div class="summary-section">
+    <h2>Advertisements</h2>
+    <p>Budget: ${{ advertisements.budget }}</p>
+    <p>Spent: ${{ advertisements.spent }}</p>
+    <p>ROI: {{ advertisements.roi }}</p>
+  </div>
+
+  <div class="summary-section">
+    <h2>Expenses</h2>
+    <p>Total Expenses: ${{ expenses.total }}</p>
+    <h3>Categories:</h3>
+    <ul>
+      <li>Marketing: ${{ expenses.categories.marketing }}</li>
+      <li>Operations: ${{ expenses.categories.operations }}</li>
+      <li>Salaries: ${{ expenses.categories.salaries }}</li>
+    </ul>
+  </div>
+
+  <div class="summary-section">
+    <h2>Revenues</h2>
+    <p>Total Revenues: ${{ revenues.total }}</p>
+    <h3>Sources:</h3>
+    <ul>
+      <li>Product Sales: ${{ revenues.sources.productSales }}</li>
+      <li>Services: ${{ revenues.sources.services }}</li>
+    </ul>
+  </div>
+</div>
