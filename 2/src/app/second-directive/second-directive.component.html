@@ -1,0 +1,25 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <h1>Public Enquiries</h1>
+
+  <div class="field-container">
+    <input type="text" formControlName="name" appValidateField placeholder="Full Name">
+  </div>
+
+  <div class="field-container">
+    <input type="email" formControlName="email" appValidateField placeholder="Email Address">
+  </div>
+
+  <div class="field-container">
+    <input type="tel" formControlName="phoneNumber" appValidateField placeholder="Phone Number">
+  </div>
+
+  <div class="field-container">
+    <input type="text" formControlName="address" appValidateField placeholder="Street Address">
+  </div>
+
+  <div class="field-container">
+    <input type="text" formControlName="enquiryCause" appValidateField placeholder="What is this about?">
+  </div>
+
+  <button type="submit" [disabled]="form.invalid">Send Request</button>
+</form>

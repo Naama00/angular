@@ -1,0 +1,86 @@
+/* רקע כללי לדף */
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  font-family: 'Segoe UI', Roboto, sans-serif;
+}
+
+/* כרטיס הטופס */
+form {
+  background: white;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+h1 {
+  color: #3f51b5; /* כחול אינדיגו מקצועי */
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* מיכל לכל שדה קלט */
+.field-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+/* עיצוב שדות הקלט */
+input {
+  width: 100%;
+  padding: 12px 16px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  outline: none;
+  background-color: #fafafa;
+}
+
+/* אפקט פוקוס - כמו ב-Google */
+input:focus {
+  border-color: #3f51b5;
+  background-color: white;
+  box-shadow: 0 0 0 4px rgba(63, 81, 181, 0.1);
+}
+
+/* עיצוב הכפתור */
+button {
+  margin-top: 10px;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  background-color: #3f51b5;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+button:hover:not(:disabled) {
+  background-color: #303f9f;
+  transform: translateY(-2px);
+}
+
+button:disabled {
+  background-color: #bdbdbd;
+  cursor: not-allowed;
+}
+
+/* עיצוב ה-Span של האייקונים מהדירקטיבה */
+span {
+  font-size: 18px;
+  margin-right: 8px;
+  vertical-align: middle;
+}

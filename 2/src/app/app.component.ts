@@ -4,10 +4,11 @@ import { CustomersComponent } from './customers/customers.component';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
 import { SearchInArrayPipe } from './search-in-array.pipe';
+import { SecondDirectiveComponent } from './second-directive/second-directive.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CustomersComponent,AnnualSalesSummaryComponent,SearchInArrayPipe],
+  imports: [CustomersComponent,AnnualSalesSummaryComponent,SearchInArrayPipe,SecondDirectiveComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
