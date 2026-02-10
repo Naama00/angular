@@ -1,0 +1,15 @@
+<div class="container">
+    <h2 style="color: #4b5563;">🔍 חפש מידע ממשלתי</h2>
+
+    <div>
+        <button (click)="httpGet()">Get Data</button>
+    </div>
+    <div>
+        <input #idInput type="number" placeholder="Enter ID" />
+        <button (click)="getDataById(idInput.value)">search</button>
+    </div>
+    <div *ngIf="apiResponse">
+        <h3>API Response:</h3>
+        <pre>{{ apiResponse | json }}</pre>
+    </div>
+</div>

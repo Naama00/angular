@@ -5,10 +5,11 @@ import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
 import { SearchInArrayPipe } from './search-in-array.pipe';
 import { SecondDirectiveComponent } from './second-directive/second-directive.component';
+import { HttpComponent } from './http/http.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CustomersComponent,AnnualSalesSummaryComponent,SearchInArrayPipe,SecondDirectiveComponent],
+  imports: [CustomersComponent,AnnualSalesSummaryComponent,SearchInArrayPipe,SecondDirectiveComponent,HttpComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
