@@ -8,8 +8,31 @@
         <input #idInput type="number" placeholder="Enter ID" />
         <button (click)="getDataById(idInput.value)">search</button>
     </div>
-    <div *ngIf="apiResponse">
-        <h3>API Response:</h3>
-        <pre>{{ apiResponse | json }}</pre>
+    <div class="results-container">
+        <div *ngIf="loading">טוען...</div>
+        <div *ngIf="error" class="error">{{ error }}</div>
+
+        <ng-container *ngIf="records?.length"> 
+            <h3>תוצאות ({{ records.length }})</h3>
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th *ngFor="let c of columns">{{ c }}</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let r of records">
+                            <td *ngFor="let c of columns">{{ r[c] }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </ng-container>
+
+        <div *ngIf="!records?.length && apiResponse && !loading">
+            <h3>API Response:</h3>
+            <pre>{{ apiResponse | json }}</pre>
+        </div>
     </div>
 </div>

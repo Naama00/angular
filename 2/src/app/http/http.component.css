@@ -64,3 +64,31 @@ pre {
   font-size: 14px;
   color: #334155;
 }
+
+.error {
+  color: #b91c1c;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px 12px;
+  border-bottom: 1px solid #eef2f7;
+  font-size: 13px;
+}
+
+th {
+  background-color: #f8fafc;
+  color: #1f2937;
+  font-weight: 700;
+}
