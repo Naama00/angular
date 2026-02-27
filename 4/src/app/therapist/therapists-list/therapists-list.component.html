@@ -1,1 +1,10 @@
-<p>therapists-list works!</p>
+<div class="therapists" dir="rtl">
+	<h2>רשימת מטפלים</h2>
+	<div class="therapists-grid">
+		<div class="therapist-card" *ngFor="let t of therapists">
+			<div class="t-name">{{ t.name }}</div>
+			<div class="t-spec">{{ t.specialty }}</div>
+			<div class="t-phone">{{ t.phone }}</div>
+		</div>
+	</div>
+</div>

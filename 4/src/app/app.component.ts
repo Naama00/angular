@@ -1,14 +1,11 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { TherapistModule } from './therapist/therapist.module';
-import { CustomersModule } from './customers/customers.module';
-import { AppointmentsModule } from './appointments/appointments.module';
+import { RouterOutlet, RouterLink } from '@angular/router';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,CustomersModule,TherapistModule,AppointmentsModule],
+  imports: [RouterOutlet, RouterLink],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
   title = '4';

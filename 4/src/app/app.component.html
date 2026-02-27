@@ -1,13 +1,13 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
-<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
-<!-- * * * * * * * * * * and can be replaced.  * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * The content below * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * is only a placeholder * * * -->
+<!-- * * * * * * * * * * * * * * * * * * and can be replaced.  * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * Delete the template below * * * * * * * * * -->
-<!-- * * * * * * * to get started with your project! * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * Delete the template below * * -->
+<!-- * * * * * * * * * * * * * * * * * to get started with your project! * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
-<style>
+<!-- <style>
   :host {
     --bright-blue: oklch(51.01% 0.274 263.83);
     --electric-violet: oklch(53.18% 0.28 296.97);
@@ -177,7 +177,20 @@
   }
 </style>
 
+<header style="background:#ffffff; border-bottom:1px solid #e6e9ee; padding:8px 16px; text-align:right;">
+  <nav style="display:inline-block;">
+    <a routerLink="/customers" style="margin-inline:8px; color:#0b5394; text-decoration:none; font-weight:600">מטופלים</a>
+    <a routerLink="/therapists" style="margin-inline:8px; color:#0b5394; text-decoration:none; font-weight:600">מטפלים</a>
+    <a routerLink="/appointments" style="margin-inline:8px; color:#0b5394; text-decoration:none; font-weight:600">פגישות</a>
+  </nav>
+</header>
+
 <main class="main">
+  <nav class="top-nav" dir="rtl" style="margin-bottom:12px; text-align:right;">
+    <a routerLink="/customers" class="pill" style="margin-inline:6px">מטופלים</a>
+    <a routerLink="/therapists" class="pill" style="margin-inline:6px">מטפלים</a>
+    <a routerLink="/appointments" class="pill" style="margin-inline:6px">פגישות</a>
+  </nav>
   <div class="content">
     <div class="left-side">
       <svg
@@ -322,15 +335,23 @@
       </div>
     </div>
   </div>
-</main>
+</main> -->
+
 
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * The content above * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * The content above * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * is only a placeholder * * * * * * * * * * * -->
 <!-- * * * * * * * * * * and can be replaced.  * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * End of Placeholder  * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
+
+<header style="background:#fff;border-bottom:1px solid #e6e9ee;padding:8px 16px;text-align:right;margin-bottom:8px;">
+  <nav style="display:inline-block;">
+    <a routerLink="/customers" style="margin-inline:8px;color:#0b5394;text-decoration:none;font-weight:600">מטופלים</a>
+    <a routerLink="/therapists" style="margin-inline:8px;color:#0b5394;text-decoration:none;font-weight:600">מטפלים</a>
+    <a routerLink="/appointments" style="margin-inline:8px;color:#0b5394;text-decoration:none;font-weight:600">פגישות</a>
+  </nav>
+</header>
 
 <router-outlet />

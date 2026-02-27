@@ -1,1 +1,10 @@
-<p>customers-list works!</p>
+<div class="customers" dir="rtl">
+	<h2>רשימת מטופלים</h2>
+	<div class="customers-grid">
+		<div class="cust-card" *ngFor="let c of customers">
+			<div class="name">{{ c.name }}</div>
+			<div class="meta">{{ c.phone }} • {{ c.email }}</div>
+			<div class="notes">{{ c.notes }}</div>
+		</div>
+	</div>
+</div>

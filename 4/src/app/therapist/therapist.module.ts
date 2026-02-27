@@ -1,16 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { TherapistsListComponent } from './therapists-list/therapists-list.component';
 import { TherapistCardComponent } from './therapist-card/therapist-card.component';
 import { AppointmentsModule } from '../appointments/appointments.module';
 
 
-
 @NgModule({
-  declarations: [TherapistsListComponent,TherapistCardComponent],
-  imports: [
-    CommonModule,AppointmentsModule
-  ],
+  declarations: [TherapistCardComponent],
+  imports: [CommonModule, AppointmentsModule],
   exports: []
 })
 export class TherapistModule { }

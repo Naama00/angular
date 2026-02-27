@@ -1,0 +1,18 @@
+@import "@angular/material/prebuilt-themes/indigo-pink.css";
+.menu-container {
+  max-width: 500px;
+  margin: 20px auto;
+  direction: rtl; /* יישור לימין */
+}
+
+.counter-badge {
+  background-color: #f0f0f0;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.item-row {
+  padding: 8px 0;
+}

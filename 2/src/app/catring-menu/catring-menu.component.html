@@ -1,0 +1,29 @@
+<div class="menu-container">
+  <h2>תפריט הארוחה</h2>
+  
+  <div class="counter-badge">
+    <strong>נבחרו {{ totalSelected }} פריטים</strong>
+  </div>
+
+  <mat-accordion multi>
+    @for (section of menu; track section.category) {
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            {{ section.category }}
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+
+        <div class="items-list">
+          @for (item of section.items; track item.name) {
+            <div class="item-row">
+              <mat-checkbox [(ngModel)]="item.selected">
+                {{ item.name }}
+              </mat-checkbox>
+            </div>
+          }
+        </div>
+      </mat-expansion-panel>
+    }
+  </mat-accordion>
+</div>

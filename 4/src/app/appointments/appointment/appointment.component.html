@@ -1,1 +1,16 @@
+<div class="appointments" dir="rtl">
+  <h2>רשימת פגישות</h2>
+  <div class="appointments-grid">
+    <div class="card" *ngFor="let a of appointments">
+      <div class="card-header">
+        <div class="customer">{{ a.customer }}</div>
+        <div class="time">{{ a.time }}</div>
+      </div>
+      <div class="card-body">
+        <div class="therapist">מטפל: {{ a.therapist }}</div>
+        <div class="notes">{{ a.notes }}</div>
+      </div>
+    </div>
+  </div>
+</div>
 <p>appointment works!</p>

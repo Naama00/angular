@@ -6,10 +6,11 @@ import { ChildComponent } from './child/child.component';
 import { SearchInArrayPipe } from './search-in-array.pipe';
 import { SecondDirectiveComponent } from './second-directive/second-directive.component';
 import { HttpComponent } from './http/http.component';
+import { CatringMenuComponent } from './catring-menu/catring-menu.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CustomersComponent,AnnualSalesSummaryComponent,SearchInArrayPipe,SecondDirectiveComponent,HttpComponent],
+  imports: [CustomersComponent,AnnualSalesSummaryComponent,SearchInArrayPipe,SecondDirectiveComponent,HttpComponent,CatringMenuComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
