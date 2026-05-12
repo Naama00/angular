@@ -1,0 +1,46 @@
+<div class="modal-overlay" *ngIf="selectedRegistrant" (click)="closeDetails()">
+  <div class="modal-card" (click)="$event.stopPropagation()">
+    
+    <!-- כותרת החלון -->
+    <div class="modal-header">
+      <h3>פרטי נרשמת</h3>
+      <button class="close-btn" (click)="closeDetails()">&times;</button>
+    </div>
+
+    <!-- גוף החלון עם הנתונים -->
+    <div class="modal-body">
+      <div class="detail-row">
+        <span class="label">שם מלא:</span>
+        <span class="value">{{ selectedRegistrant.firstName }} {{ selectedRegistrant.lastName }}</span>
+      </div>
+      <div class="detail-row">
+        <span class="label">מספר זהות:</span>
+        <span class="value">{{ selectedRegistrant.id }}</span>
+      </div>
+      <div class="detail-row">
+        <span class="label">טלפון:</span>
+        <span class="value">{{ selectedRegistrant.phone }}</span>
+      </div>
+      <hr>
+      <div class="detail-row">
+        <span class="label">שיעור:</span>
+        <span class="value">{{ selectedRegistrant.lessonName }}</span>
+      </div>
+      <div class="detail-row">
+        <span class="label">מחיר לתשלום:</span>
+        <span class="value price">{{ selectedRegistrant.price }} ₪</span>
+      </div>
+      <div class="detail-row">
+        <span class="label">סטטוס תשלום:</span>
+        <span class="value status" [class.paid]="selectedRegistrant.isPaid">
+          {{ selectedRegistrant.isPaid ? 'שולם במלואו' : 'ממתין לתשלום' }}
+        </span>
+      </div>
+    </div>
+
+    <!-- כפתור פעולה בתחתית -->
+    <div class="modal-footer">
+      <button class="primary-btn" (click)="closeDetails()">אישור</button>
+    </div>
+  </div>
+</div>

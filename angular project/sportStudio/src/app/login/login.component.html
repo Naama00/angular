@@ -1,0 +1,29 @@
+<div class="login-container">
+  <h2>כניסה למערכת</h2>
+  
+  <form [formGroup]="loginForm" (ngSubmit)="onLogin()">
+    <!-- רכיב Material 1: Form Field + Input -->
+    <mat-form-field appearance="outline">
+      <mat-label>שם משתמש</mat-label>
+      <input matInput formControlName="username" placeholder="הזינו שם משתמש">
+      <mat-error *ngIf="loginForm.get('username')?.hasError('required')">
+        שם משתמש הוא שדה חובה
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>סיסמה</mat-label>
+      <input matInput type="password" formControlName="password" placeholder="הזינו סיסמה">
+      <mat-error *ngIf="loginForm.get('password')?.hasError('required')">
+        סיסמה היא שדה חובה
+      </mat-error>
+    </mat-form-field>
+
+    <!-- רכיב Material 2: Button -->
+    <button mat-raised-button color="primary" type="submit" [disabled]="loginForm.invalid">
+      כניסה
+    </button>
+
+    <p class="error-msg" *ngIf="errorMessage">{{ errorMessage }}</p>
+  </form>
+</div>

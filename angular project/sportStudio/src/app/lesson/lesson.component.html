@@ -1,0 +1,6 @@
+<div class="lesson-card" [class.started]="isStarted">
+  <h3>{{ lessonData.name }}</h3>
+  <p>שעה: {{ lessonData.time }}</p>
+  <p>מיקום: {{ lessonData.location }}</p>
+  <strong *ngIf="isStarted" class="alert-text">השיעור בעיצומו</strong>
+</div>

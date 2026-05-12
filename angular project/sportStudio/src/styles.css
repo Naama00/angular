@@ -1,0 +1,17 @@
+/* AG-Grid Theme - Quartz Theme Only (no legacy CSS) */
+@import "ag-grid-community/styles/ag-theme-quartz.css";
+
+/* Global Styles */
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+/* RTL Support */
+.ag-theme-quartz {
+  --ag-font-size: 13px;
+}
+
+/* Material Design Compatibility */
+.mat-mdc-dialog {
+  direction: rtl;
+}
+

@@ -1,0 +1,24 @@
+<div class="travel-order">
+  <h2>הזמנת נסיעה</h2>
+  <form *ngIf="!submitted" (ngSubmit)="submitOrder()" class="order-form">
+    <div class="form-group">
+      <label for="destination">יעד:</label>
+      <input type="text" id="destination" [(ngModel)]="destination" name="destination" required>
+    </div>
+    <div class="form-group">
+      <label for="date">תאריך:</label>
+      <input type="date" id="date" [(ngModel)]="date" name="date" required>
+    </div>
+    <div class="form-group">
+      <label for="purpose">מטרה:</label>
+      <textarea id="purpose" [(ngModel)]="purpose" name="purpose" rows="3" required></textarea>
+    </div>
+    <button type="submit" class="submit-btn">שלח הזמנה</button>
+  </form>
+  <div *ngIf="submitted" class="confirmation">
+    <h3>ההזמנה נשלחה בהצלחה!</h3>
+    <p>יעד: {{ destination }}</p>
+    <p>תאריך: {{ date }}</p>
+    <p>מטרה: {{ purpose }}</p>
+  </div>
+</div>
